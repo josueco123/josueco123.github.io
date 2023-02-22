@@ -41,30 +41,7 @@
     }
 }
 </script>
-<script >
-const sourceLanguage = "en";
-const targetLanguage = "hi";
 
-// Replace "YOUR_GOOGLE_TRANSLATE_API_KEY" with your Google Translate API key
-const apiKey = "AIzaSyCeSz0hrKMVIQwDtwgF-ZVk_RnBQ1Za0ic";
-
-// Fetch the HTML content of the website to be translated
-fetch(window.location.href)
-  .then(response => response.text())
-  .then(html => {
-    // Use the Google Translate API to translate the HTML content
-    const googleTranslateUrl = `https://translation.googleapis.com/language/translate/v2?key=${apiKey}&source=${sourceLanguage}&target=${targetLanguage}&q=${encodeURIComponent(html)}`;
-    return fetch(googleTranslateUrl);
-  })
-  .then(response => response.json())
-  .then(data => {
-    // Replace the current page's HTML with the translated HTML
-    document.open();
-    document.write(data.data.translations[0].translatedText);
-    document.close();
-  })
-  .catch(error => console.error(error));
-  </script>
 <script type="application/ld+json">
 {
  "@context": "http://schema.org",
@@ -3046,8 +3023,34 @@ fetch(window.location.href)
     
       
     <div data-template="notifications"></div>
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
 
-  
+  <script>
+    $(document).ready(function () {
+      const sourceLanguage = "en";
+      const targetLanguage = "hi";
+
+      // Replace "YOUR_GOOGLE_TRANSLATE_API_KEY" with your Google Translate API key
+      const apiKey = "AIzaSyCeSz0hrKMVIQwDtwgF-ZVk_RnBQ1Za0ic";
+
+      // Fetch the HTML content of the website to be translated
+      fetch(window.location.href)
+        .then(response => response.text())
+        .then(html => {
+          // Use the Google Translate API to translate the HTML content
+          const googleTranslateUrl = `https://translation.googleapis.com/language/translate/v2?key=${apiKey}&source=${sourceLanguage}&target=${targetLanguage}&q=${encodeURIComponent(html)}`;
+          return fetch(googleTranslateUrl);
+        })
+        .then(response => response.json())
+        .then(data => {
+          // Replace the current page's HTML with the translated HTML
+          document.open();
+          document.write(data.data.translations[0].translatedText);
+          document.close();
+        })
+        .catch(error => console.error(error));
+          });
+    </script>
     <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="webpack/analytics.2edefc668ab4db842c41.js"></script>
 <script>
   window.CC.Class.Analytics = new window.Analytics({
