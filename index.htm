@@ -3049,15 +3049,16 @@
       .then(response => response.json())
         .then(data => {
           // Replace the current page's HTML with the translated HTML
+          console.log(data);
           document.open();
-          document.write(data.data.translations[0].translatedText);
+          document.write(data.translations[0].translatedText);
           document.close();
         })
-  .catch(error => console.error(error));
+    .catch(error => console.error(error));
 
       });
     </script>
-    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="webpack/analytics.2edefc668ab4db842c41.js"></script>
+   
 <script>
   window.CC.Class.Analytics = new window.Analytics({
     url: "",
