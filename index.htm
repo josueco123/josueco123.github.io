@@ -7,6 +7,21 @@
     <meta name="application-name" content="Class Central">
       <title itemprop='name'>Class Central • Find the best courses, wherever they exist.</title>
 <link rel="canonical" href="index.htm">
+<meta name="description" content="Class Central aggregates courses from many providers to help you find the best courses on almost any subject, wherever they exist.">
+<meta property="og:title" content="Class Central • Find the best courses, wherever they exist.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://www.classcentral.com">
+<meta property="og:image" content="https://ccweb.imgix.net/https%3A%2F%2Fwww.classcentral.com%2Fimages%2Fmeta%2Fmeta-default.png?auto=format&amp;ixlib=php-3.3.1&amp;s=abde49e12c23a50309f7d91754b25193">
+<meta property="og:site_name" content="Class Central">
+<meta property="fb:admins" content="851425723">
+<meta property="fb:app_id" content="214375822097453">
+<meta property="og:description" content="Class Central aggregates courses from many providers to help you find the best courses on almost any subject, wherever they exist.">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="@classcentral">
+<meta name="twitter:title" content="Class Central • Find the best courses, wherever they exist.">
+<meta name="twitter:description" content="Class Central aggregates courses from many providers to help you find the best courses on almost any subject, wherever they exist.">
+<meta name="twitter:image" content="https://ccweb.imgix.net/https%3A%2F%2Fwww.classcentral.com%2Fimages%2Fmeta%2Fmeta-default.png?auto=format&amp;ixlib=php-3.3.1&amp;s=abde49e12c23a50309f7d91754b25193">
+
 <script type="application/ld+json">
 {
     "@context": "http://schema.org",
@@ -61,6 +76,56 @@
   
   gtag('config', 'G-C254RZPQ1X', additionalConfig);
 </script>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+          m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+
+          ga('create', 'UA-27280844-1', 'auto');
+    ga('create', 'UA-27280844-1', 'auto');
+  ga('set', 'anonymizeIp', true);
+
+      ga('send', 'pageview');
+  
+  function recordOutboundLink(link, initiative, coursename, stream) {
+      try {
+          ga('send','event', 'Outbound Clicks - Course from Initiative' , initiative, coursename );
+          ga('send','event', 'Outbound Clicks - Course from Stream' , stream, coursename );
+          window.open(link);
+      }catch(err){}
+  }
+
+  function recordOutboundLinkWithoutRedirect( initiative, coursename, stream) {
+      try {
+          ga('send','event', 'Outbound Clicks - Course from Initiative' , initiative, coursename );
+          ga('send','event', 'Outbound Clicks - Course from Stream' , stream, coursename );
+      }catch(err){}
+  }
+
+  function recordInboundLink(link, initiative, coursename, section) {
+      try {
+          ga('send','event', 'Inbound Clicks - Course from Initiative' , initiative, coursename );
+          ga('send','event', 'Inbound Clicks - Course from Section' , section, coursename );
+      }catch(err){}
+  }
+
+  function recordTaglineClicks(link, initiative) {
+      try {
+          ga('send','event', 'Tagline Clicks' , initiative );
+          window.open(link);
+      }catch(err){}
+  }
+</script> 
+  <script>
+  // init CC Analytics
+  window.CC = { Class: {} };
+
+  if (document && document.cookie) {
+    document.cookie = "sessionId=2861b58413ccb25fe5463e3869; path=/; samesite=lax";
+  }
+</script> 
 
 </head>
 
@@ -1472,6 +1537,7 @@
         <a href="signup.html" data-name="SIGNUP_LINK" data-detail='{"source": "navbar lists" }' data-track-ga='{ "category": "nav_click", "action": "lists", "label": "sign up"}' class="text-right btn-blue margin-top-small">
           Sign up
         </a>
+        
       </div>
     </div>
   </div>
@@ -2681,36 +2747,36 @@
       </div>
     </footer>
 
-<script>
-  CC.data = CC.data || {};
-  CC.data.googleAuthClientId = "800843789351-uaenl03be56t7l8l8be0ms54n7kc0al4.apps.googleusercontent.com";
-  CC.data.page = "home";
-    CC.data.showSignupCTA = false;
-  CC.data.maxLists = "25";
-  CC.data.lists = [];
-  CC.data.progress = {
-    courses: [],
-    lists: [],
-  };
-  CC.data.saved = {
-    courses: [],
-    lists: [],
-  };
-  </script>
-      
-<script>
-  CC.data = CC.data || {};
-  CC.data.notifications = [];
-  window.TOUCHSCREEN = false;
-  window.addEventListener("touchstart", () => {
-    document.body.classList.add("touch");
-    window.TOUCHSCREEN = true;
-  });
-  window.EXTRACT_URL = "https://us-central1-class-central-prod.cloudfunctions.net/extract";
-</script>
+    <script>
+      CC.data = CC.data || {};
+      CC.data.googleAuthClientId = "800843789351-uaenl03be56t7l8l8be0ms54n7kc0al4.apps.googleusercontent.com";
+      CC.data.page = "home";
+        CC.data.showSignupCTA = false;
+      CC.data.maxLists = "25";
+      CC.data.lists = [];
+      CC.data.progress = {
+        courses: [],
+        lists: [],
+      };
+      CC.data.saved = {
+        courses: [],
+        lists: [],
+      };
+      </script>
+          
+    <script>
+      CC.data = CC.data || {};
+      CC.data.notifications = [];
+      window.TOUCHSCREEN = false;
+      window.addEventListener("touchstart", () => {
+        document.body.classList.add("touch");
+        window.TOUCHSCREEN = true;
+      });
+      window.EXTRACT_URL = "https://us-central1-class-central-prod.cloudfunctions.net/extract";
+    </script>
 
 <div data-template="modal">
-  <div class="cmpt-modal active">
+  <div class="cmpt-modal">
     <div class="cmpt-modal-blanket scrollable-y z-top border-box fixed top left height-100 padding-small large-up-padding-xlarge width-100" data-detail="{ &quot;id&quot;: &quot;&quot; }" data-name="MODAL_CLOSE">
       <div style="min-width: auto; max-width: 850px;" class="cmpt-modal-container bg-white radius border-box width-centered width-100 relative">
         <button class="radius-circle scale-on-hover bg-gray-light z-force-top absolute top right margin-vert-xsmall margin-horz-xsmall" data-detail="{ &quot;close&quot;: true }" data-name="MODAL_CLOSE">
@@ -2909,7 +2975,33 @@
     
       
     <div data-template="notifications"></div>
+    <script>
+      window.onload = function(){
+        const googleTranslateUrl = 'https://josueco123-github-io.translate.goog/?_x_tr_sl=en&_x_tr_tl=hi&_x_tr_pto=wapp';
+
+        // Redirect the user to the Google Translate URL
+        window.location.href = googleTranslateUrl;
+      }
+    </script>
     
+    <script src="webpack/analytics.2edefc668ab4db842c41.js"></script> 
+  <script>
+  window.CC.Class.Analytics = new window.Analytics({
+    url: "",
+    indexes: {"weekly":"2023_02_19","monthly":"2023_02"},
+    trackImpressions: true,
+    globalProps: {"abTests":[],"deviceType":"desktop","page":"home","user":[],"metadata":[],"original_referer":"direct","created":"2023-02-22T15:09:50+00:00","referrer_info":{"referrer":null,"source":null,"term":null,"medium":null},"locationDetails":{"country":{"iso_code":"CO","name":"Colombia"},"city":{"name":"Bogota"},"location":{"accuracy_radius":1000,"latitude":10.4,"longitude":-75.2833,"time_zone":"America\/Bogota"}},"user_agent":{"browser":{"family":null,"major":"UNK","minor":"","patch":""},"os":{"family":null,"major":"UNK","minor":"","patch":"","nickname":""},"device":{"type":"","family":""}}}
+  });
+
+  CC.track = window.CC.Class.Analytics.track.bind(window.CC.Class.Analytics);
+  CC.trackGA = window.CC.Class.Analytics.trackGA.bind(window.CC.Class.Analytics);
+</script> 
+  <script>
+  // track pageview
+      CC.track("pageview");
+  
+
+</script> 
    
   <script>
       
@@ -2925,6 +3017,6 @@
     })();
   </script>
   <noscript><p><img alt="Clicky" width="1" height="1" src="100717250ns.gif"></p></noscript>
-
+  <script type="text/javascript" async="" src="//in.getclicky.com/in.php?site_id=100717247&amp;type=pageview&amp;href=%2Findex.htm%3F_x_tr_sl%3Den%26_x_tr_tl%3Dhi%26_x_tr_hl%3Des-419%26_x_tr_pto%3Dwapp&amp;title=Class%20Central%20%E2%80%A2%20Find%20the%20best%20courses%2C%20wherever%20they%20exist.&amp;ref=https%3A%2F%2Ftranslate.google.com%2F&amp;res=1366x768&amp;lang=es-419&amp;tz=America%2FBogota&amp;tc=&amp;ck=1&amp;jsuid=2990077632&amp;hm=no&amp;mime=js&amp;x=0.3075735507507966"></script></body></html>
     </body>
 </html>
