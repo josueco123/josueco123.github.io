@@ -1287,8 +1287,10 @@
         var st = window.pageYOffset || document.documentElement.scrollTop;
         if (st > lastScrollTop) {            
             $("iframe").attr("style", "display: none !important;");
+            $("#page-home").attr("style","margin-top: px; transition: none 0s ease 0s;");
         } else if (st < lastScrollTop) {
-          $("iframe").attr("style", "display: none !important;");        
+          $("iframe").attr("style", "display: none !important;");     
+          $("#page-home").attr("style","margin-top: px; transition: none 0s ease 0s;");   
         } 
         lastScrollTop = st <= 0 ? 0 : st; // For Mobile or negative scrolling
       }, false);
